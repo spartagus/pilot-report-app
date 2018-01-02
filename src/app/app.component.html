@@ -1,6 +1,6 @@
 <div class="row text-right" style="width:99%">
   <label>switch view</label>
-  <input type="checkbox" name="switch" [(ngModel)]="switch" value="switch">
+  <input type="checkbox" name="switch" [(ngModel)]="switch" >
 </div>
 
 <div *ngIf="switch == false; then thenblock; else elseblock"></div>
@@ -13,6 +13,7 @@
 </ng-template>
 
 <ng-template #elseblock>
+	I'm here
    <app-animated-view></app-animated-view>
 </ng-template>
 
