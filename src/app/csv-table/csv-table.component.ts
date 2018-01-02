@@ -70,7 +70,9 @@ export class CsvTableComponent implements OnInit {
 
   //var csv is the CSV file with headers
   csv2JSON(csv){
+  	console.log("csv " +csv);
     var lines=csv.split("\n");
+    console.log("lines " +lines);
     var result = []; 
 
     var headers=lines[0].split(",");
