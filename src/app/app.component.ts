@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+ 
+ switch:boolean;
+
+ constructor() { }
+
+ ngOnInit() { this.switch = false; }
+
 }
+ 

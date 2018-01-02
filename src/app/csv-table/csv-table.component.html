@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="form-group row">
+    <label>Upload csv / json file: </label>
+	  <input type="file" (change)="onFileSelect($event.target)" name="mycsvfile">
+  </div>
+  
+  <div class="row">
+   <div class="table-responsive"  style="width:90%">          
+    <table class="table text-center table-condensed table-bordered" style="background-image: url('assets/images/bck.JPG'); border-radius: 5px ;">
+      <thead>
+        <tr>
+          <th *ngFor="let head of header">{{head}}</th>                          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of jsonData">
+          <td *ngFor="let head of header;">{{data[head]}}</td>               
+        </tr>        
+      </tbody>
+    </table>
+   </div>
+  </div>
+</div>
